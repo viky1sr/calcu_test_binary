@@ -1,0 +1,37 @@
+
+#Deelete data by id
+DELETE http://127.0.0.1:3000/calculator/619ed589c4299
+Accept: application/json
+
+###
+
+# Get data by id
+GET http://127.0.0.1:3000/calculator/619ed589c4299
+Accept: application/json
+
+###
+POST http://127.0.0.1:3000/calculator/add
+Content-Type: application/json
+
+#value bisa mengunakan (,) ( operator ) ( space )
+
+{
+    "value" : "1 2 3 4 5"
+}
+
+###
+
+# Get data by driver
+GET http://127.0.0.1:3000/calculator/driver?=name
+Accept: application/json
+
+###
+
+# Get data by driver
+# filter by array [drivername]
+GET http://127.0.0.1:3000/calculator/driver?=[file|latest|composite]
+Accept: application/json
+
+###
+
+
